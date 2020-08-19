@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> RUBI'S PICK BOARD </title>
+    <link rel="stylesheet" type="text/css" href="./css/css/bootstrap.min.css">
+    <script src="./css/jquery-3.5.1.min.js"></script>
+    <script src="./css/js/bootstrap.min.js"></script>
+    <link rel= "stylesheet" type= "text/css" href="css/style.css">
+   
+    <script>
+        $(document).ready(function(){
+            $('nav').css({
+                background:'black',
+                
+            }).on('mouseenter',function(){
+              $(this).css('background','#e67e22');  
+            }).on('mouseleave',function(){
+                $(this).css('background','black');
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+              <div class="row">
+                  <a href="./index.html"><img src="img/dog.png" alt="Omnifood logo" class="logo"/></a>
+                  <ul class= "main-nav">
+                  <li><a href="./index.html#shop">매장소개</a></li>
+                  <li><a href="./index.html#how">이용방법</a></li>
+                  <li><a href="./index.html#citi">매장 지역</a></li>
+                  <li><a href="./index.html#plan">플랜 가입</a></li>
+                      
+                  </ul>
+              </div>
+    </nav>
+  
+    
+    <div class="container oder mt-5">
+        <div class = "form-title">
+            <h2> 지금 주문하세요! </h2>
+        </div>
+        <div class= "form-text text-center">
+            <p>20분 거리에 있는 고객님들께 배달 서비스를 제공하고 있습니다.<br>
+                또한 원하시는 시간에 맞춰 배달 해 드립니다.<br>
+                편하게 이용해 보세요!<br>
+            </p>
+        </div>
+    
+        <hr>
+    </div>
+    <div class="container oder-form">
+       <form class ="form-group mt-5">
+            <div class="row">
+                <div class="col-sm-5">
+                      <label for="item" class="float-right mr-3 mt-1"> 원하시는 상품 </label>
+                </div>
+                <div class="col-sm-7">
+                      <select name ="item" style="max-width: 500px;" class="float-left">
+                <option name=""> 제품을 선택하세요 </option>
+                <option name="사료"> 사료 </option>
+                <option name="건강"> 건강 </option>
+                <option name="간색/캔"> 간식/캔 </option>
+                <option name="배변/위생"> 배변/위생 </option>
+                <option name="식기/물병"> 식기/물병 </option>
+                <option name="장난감"> 장난감 </option>
+                <option name="하우스"> 하우스 </option>
+                <option name="목욕/미용"> 목욕/미용 </option>
+                <option name="패션/소품"> 패션/소품 </option>
+           </select>
+                </div>
+           </div>
+        
+          
+        </form>
+        <form class= "form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                     <label for ="name" class="float-right mr-3 mt-1"> 이름 </label>
+                </div>
+                <div class="col-sm-7">
+                     <input type= "text" name="text" style="max-width: 500px;" placeholder="name" >
+                </div>
+            </div>
+            
+           
+        </form>
+        <form class= "form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="adress" class="float-right mr-3 mt-1"> 주소 </label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" style="max-width: 500px;" placeholder = "your adress">
+                </div>
+                </div>
+                </form>
+
+        <form class= "form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="email" class="float-right  mr-3 mt-1"> 이메일 </label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" style="max-width:500px;" placeholder="email">
+                </div>
+            </div>        
+        </form>
+        <form class= "form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="time" class="float-right mr-3 mt-1">편하신 시간</label>
+                </div>
+                <div class="col-sm-7">
+                    <select style="max-width:500px;">
+                        <option name="">원하시는 시간을 선택해주세요</option>
+                        <option name="AM 9:00 ~ AM 11:00">AM 9:00 ~ AM:11:00 </option>
+                          <option name="AM 11:00 ~ PM 13:00">AM 11:00 ~ PM:13:00 </option>
+                          <option name="PM 13:00 ~ PM 15:00">PM 13:00 ~ PM 15:00</option>
+                          <option name="PM 15:00 ~ PM17:00">PM 15:00 ~ PM:17:00 </option>
+                          <option name="AM 9:00 ~ AM 11:00">PM 17:00 ~ PM:19:00 </option>
+                             <option name="기타"> 기타! 요청사항에 시간을 적어주세요 (야간도 가능) </option>
+                          
+                        
+                    </select>
+                    
+                </div>
+            </div>
+        </form>
+        <form class="form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="결제 방법" class="float-right mr-3 mt-1"> 결제 방법 <label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="radio" name="pay"> 카드
+                    <input type="radio" name="pay"> 계좌이체
+                </div>
+            </div>
+        </form>
+        <form class= "form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="요청사항" class="float-right mr-3 mt-1"> 요청사항 </label>
+                </div>
+                <div class="col-sm-7">
+                    <textarea name="info" style="max-width:500px;"> </textarea>
+                </div>
+            </div>        
+        </form>
+        <form class="form-group mt-3">
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="동의" class="float-right mr-3 mt-1"> 정보 제공에 동의하십니까?</label>    
+                </div>
+                <div class="col-sm-7">
+                    <input type="radio" name="agree" value="동의"> 동의
+                    <input type="radio" name="agree" value="거부"> 거부
+                </div>
+            </div>        
+        </form>
+                 <hr>
+            <div class="button-group mb-5">
+                <center>
+                    <button class="btn btn-lg btn-success" type="submit"> 주문</button>
+                    <button class="btn btn-lg btn-danger"> 취소</button>
+                </center>
+            </div>
+            </div>
+             
+          
+    </div>
+      
+        
+    </section>
+    
+    
+    
+    
+    
+    
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class= "footer-nav">
+                        <li><a href="#">About Us</a></li>
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Press</a></li>
+                         <li><a href="#">IOS App</a></li>
+                         <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon id="facebook"name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon id ="twitter"name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon id ="google" name="logo-google"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon id ="instagram" name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Rubi's pick. All rights reserved.
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
